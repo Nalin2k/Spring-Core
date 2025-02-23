@@ -1,4 +1,4 @@
-Spring Core :
+1. Spring Core :
 
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
 <dependency>
@@ -7,7 +7,8 @@ Spring Core :
     <version>6.2.1</version>
 </dependency>
 	
-Spring Context
+	
+2. Spring Context
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 <dependency>
     <groupId>org.springframework</groupId>
@@ -15,7 +16,8 @@ Spring Context
     <version>6.2.1</version>
 </dependency>
 
-lombok:
+
+3. Lombok:
     <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 <dependency>
     <groupId>org.projectlombok</groupId>
@@ -23,4 +25,17 @@ lombok:
     <version>1.18.36</version>
     <scope>provided</scope>
 </dependency>
+
+
+
+4. xml 
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+</beans>
 	

@@ -1,8 +1,18 @@
 package spring.core;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import spring.core.model.Employee;
+
 public class App {
-	
-	private int id;
-	private String name,gender;
+	public static void main(String args[]) {
+		ApplicationContext ioc = new ClassPathXmlApplicationContext("applicationcontext.xml");
+		Employee bean1 = ioc.getBean("emp", Employee.class);
+		Employee bean2 = ioc.getBean("emp2", Employee.class);
+		
+		System.out.println(bean1);
+		System.out.println(bean2);
+	}
 	
 }
