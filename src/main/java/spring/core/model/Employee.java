@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
-
 //@Data
 @Getter
 //@Setter //(value = AccessLevel.PRIVATE)
