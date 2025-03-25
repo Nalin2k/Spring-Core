@@ -1,11 +1,7 @@
 package spring.core.model;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import lombok.ToString;
 
 
@@ -19,6 +15,7 @@ public class Employee {
 
 	private int id;
 	private String name,gender;
+	private String address;
 	
 	public Employee(int id, String name, String gender) {
 		super();
