@@ -14,5 +14,5 @@ public class App {
 		System.out.println(bean1);
 		System.out.println(bean2);
 	}
-	
 }
+    

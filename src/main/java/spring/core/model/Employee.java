@@ -14,7 +14,7 @@ import lombok.ToString;
 //@Setter //(value = AccessLevel.PRIVATE)
 @ToString //(exclude = "name")
 @RequiredArgsConstructor
-//@AllArgsConstructor
+//@AllArgsConstructor  
 public class Employee {
 
 	private int id;
@@ -39,5 +39,4 @@ public class Employee {
 		System.out.println("Employee.setGender()");
 		this.gender = gender;
 	}
-
 }
