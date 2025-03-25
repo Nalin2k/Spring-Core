@@ -13,6 +13,9 @@ public class App {
 		
 		System.out.println(bean1);
 		System.out.println(bean2);
+		
+//		System.out.println(System.getProperty("java.version") );
+//		System.out.println(System.getProperty("java.runtime.version"));
 	}
 }
     

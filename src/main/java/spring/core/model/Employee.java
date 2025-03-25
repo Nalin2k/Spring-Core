@@ -15,15 +15,17 @@ public class Employee {
 
 	private int id;
 	private String name,gender;
-	private String address;
+	private Address address;
 	
-	public Employee(int id, String name, String gender) {
+	public Employee(int id, String name, String gender, Address address) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.gender = gender;
+		this.address = address;
 		System.out.println("Employee.Employee()");
 	}
+
 	public void setId(int id) {
 		System.out.println("Employee.setId()");
 		this.id = id;
@@ -36,4 +38,5 @@ public class Employee {
 		System.out.println("Employee.setGender()");
 		this.gender = gender;
 	}
+
 }
