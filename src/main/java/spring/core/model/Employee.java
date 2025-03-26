@@ -5,11 +5,12 @@ import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 //@Data
-@Getter
 //@Setter //(value = AccessLevel.PRIVATE)
+//@AllArgsConstructor  
+@Getter
 @ToString //(exclude = "name")
 @RequiredArgsConstructor
-//@AllArgsConstructor  
+
 public class Employee {
 
 	private int id;
@@ -38,4 +39,9 @@ public class Employee {
 		this.gender = gender;
 	}
 
+	public void setAddress(Address address) {
+		this.address = address;
+		System.out.println("Employee.setAddress()");
+	}
+	
 }
