@@ -10,19 +10,21 @@
 		<property name="address" ref="add" />
 	</bean>
 
-<!-- 	<bean name="emp2" class="spring.core.model.Employee">
+	<bean name="emp2" class="spring.core.model.Employee">
 		<constructor-arg name="id" value="102" />
 		<constructor-arg name="name" value="Muskan" />
 		<constructor-arg name="gender" value="Female" />
-	</bean> -->
+		<constructor-arg name="address" ref="add2" />
+	</bean>
+	
+	<bean name="add2" class="spring.core.model.Address">
+		<constructor-arg name="city" value="Mumbai" />
+		<constructor-arg name="state" value="MAHA" />
+	</bean>
 	
 	<bean name="add" class="spring.core.model.Address">
 		<property name="city" value="Noida" />
 		<property name="state" value="UP" />
 	</bean>
-	
-<!-- 	<bean name="add2" class="spring.core.model.Address">
-		<property name="city" value="Mumbai" />
-		<property name="state" value="Maharastra" />
-	</bean> -->
+
 </beans>
