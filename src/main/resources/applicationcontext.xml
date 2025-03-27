@@ -9,7 +9,8 @@
 		<property name="gender" value="Male" />
 		<property name="address" ref="add" />
 		
-		<property name="list">
+<!-- 		Property based collection injection-->		
+			<property name="list">
 			<list>
 				<value>1001</value>
 				<value>1002</value>
@@ -42,6 +43,7 @@
 			</map>
 		</property>
 		
+		<!-- Constructor based collection injection -->
 		<!-- <constructor-arg name="list">
 			<list>
 				<value>1001</value>
