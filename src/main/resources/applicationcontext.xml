@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-	<!-- bean definitions here -->
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
 	<bean name="emp" class="spring.core.model.Employee">
 		<property name="id" value="101" />
 		<property name="name" value="Shivam" />
 		<property name="gender" value="Male" />
 		<property name="address" ref="add" />
+		
 		<property name="list">
 			<list>
 				<value>1001</value>
@@ -19,6 +18,7 @@
 				<value>1005</value>
 			</list>
 		</property>
+
 		<property name="set">
 			<set>
 				<value>2001</value>
@@ -30,6 +30,7 @@
 				<value>2007</value>
 			</set>
 		</property>
+		
 		<property name="map">
 			<map>
 				<entry key="1" value="ONE" />
@@ -40,15 +41,46 @@
 				<entry key="5" value="FIVE" />
 			</map>
 		</property>
-
+		
+		<!-- <constructor-arg name="list">
+			<list>
+				<value>1001</value>
+				<value>1002</value>
+				<value>1003</value>
+				<value>1001</value>
+				<value>1005</value>
+			</list>
+		</constructor-arg>
+		
+				<constructor-arg name="set">
+			<set>
+				<value>2001</value>
+				<value>2002</value>
+				<value>2001</value>
+				<value>2003</value>
+				<value>2005</value>
+				<value>2001</value>
+				<value>2007</value>
+			</set>
+		</constructor-arg>
+		
+		<constructor-arg name="map">
+			<map>
+				<entry key="1" value="ONE" />
+				<entry key="2" value="TWO" />
+				<entry key="3" value="THREE" />
+				<entry key="4" value="FOUR" />
+				<entry key="1" value="one" />
+				<entry key="5" value="FIVE" />
+			</map>
+		</constructor-arg> -->
 	</bean>
-
-
-
-
+	
 	<bean name="add" class="spring.core.model.Address">
-		<property name="city" value="Noida" />
-		<property name="state" value="UP" />
+		<property name="city" value="Noida"/>
+		<property name="state" value="UP"/>
 	</bean>
+	
+	
 
 </beans>
