@@ -8,43 +8,31 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
-//@Data
-//@Setter //(value = AccessLevel.PRIVATE)
-//@AllArgsConstructor  
 @Getter
-@ToString //(exclude = "name")
+@ToString
 @RequiredArgsConstructor
-
 public class Employee {
 
 	private int id;
-	private String name,gender;
+	private String name, gender;
 	private Address address;
+
 	private List<Integer> list;
 	private Set<Integer> set;
 	private Map<Integer, String> map;
+
 	
-	
-	public Employee(int id, String name, String gender, Address address, List<Integer> list, Set<Integer> set,
-			Map<Integer, String> map) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.gender = gender;
-		this.address = address;
-		this.list = list;
-		this.set = set;
-		this.map = map;
-	}
 
 	public void setId(int id) {
 		System.out.println("Employee.setId()");
 		this.id = id;
 	}
+
 	public void setName(String name) {
 		System.out.println("Employee.setName()");
 		this.name = name;
 	}
+
 	public void setGender(String gender) {
 		System.out.println("Employee.setGender()");
 		this.gender = gender;
@@ -66,5 +54,19 @@ public class Employee {
 	public void setMap(Map<Integer, String> map) {
 		this.map = map;
 	}
+
+	public Employee(int id, String name, String gender, Address address, List<Integer> list, Set<Integer> set,
+			Map<Integer, String> map) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.gender = gender;
+		this.address = address;
+		this.list = list;
+		this.set = set;
+		this.map = map;
+	}
+
+	
 	
 }
