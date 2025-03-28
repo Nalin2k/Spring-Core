@@ -3,12 +3,9 @@ package spring.core.model;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
-
-//@Data
-//@Setter //(value = AccessLevel.PRIVATE)
-//@AllArgsConstructor  
+ 
 @Getter
-@ToString //(exclude = "name")
+@ToString
 @RequiredArgsConstructor
 
 public class Employee {
