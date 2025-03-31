@@ -1,5 +1,8 @@
 package spring.core.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
@@ -7,7 +10,7 @@ import lombok.ToString;
 @Getter
 @ToString
 @RequiredArgsConstructor
-
+@Component
 public class Employee {
 
 	private int id;
@@ -35,7 +38,8 @@ public class Employee {
 		System.out.println("Employee.setGender()");
 		this.gender = gender;
 	}
-
+	
+	@Autowired
 	public void setAddress(Address address) {
 		this.address = address;
 		System.out.println("Employee.setAddress()");
